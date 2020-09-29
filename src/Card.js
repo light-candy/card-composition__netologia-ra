@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export function Card(props) {
     return(
@@ -11,4 +12,10 @@ export function Card(props) {
          </div>
        </div>
     );
+}
+
+Card.propTypes = {
+    title: PropTypes.string,
+    text: PropTypes.string,
+    children: PropTypes.node
 }
